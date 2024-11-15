@@ -4,6 +4,7 @@ import axios from 'axios';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFrown } from '@fortawesome/free-solid-svg-icons';
 import './App.css';
+import Forecast from './Feutre1'; // Import Forecast component
 
 function Grp204WeatherApp() {
   const [input, setInput] = useState('');
@@ -113,10 +114,12 @@ function Grp204WeatherApp() {
         </div>
       )}
 
-     
+      {/* 5-Day Forecast */}
+      {weather.forecast.length > 0 && (
+        <Forecast forecast={weather.forecast} /> // Use Forecast component
+      )}
     </div>
   );
 }
 
 export default Grp204WeatherApp;
-
