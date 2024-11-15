@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Forecast({ forecast }) {
+function Forecastt({ forecast }) {
   const weekDays = ['Dimanche', 'Lundi', 'Mardi', 'Mercredi', 'Jeudi', 'Vendredi', 'Samedi'];
 
   return (
@@ -28,4 +28,4 @@ function Forecast({ forecast }) {
   );
 }
 
-export default Forecast;
+export default Forecastt;
